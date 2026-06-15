@@ -4,9 +4,7 @@ Eine interaktive Web-Simulation zur Verfolgung eines Stratosphärenballons. Dies
 
 ## ✨ Features
 
-* **Flugsimulation in Echtzeit:** Simuliert einen kompletten Flug inklusive Winddrift über Deutschland. Der Ballon steigt bis auf 30 km (30.000 m) auf, bevor er platzt (Burst-Phase) und wieder Richtung Boden sinkt.
 * **Hochauflösende Karte:** Integriert Satellitenbilder (Esri World Imagery) über die Leaflet.js-Bibliothek.
-* **Mission Control Dashboard:** Ein stylisches User Interface im Glassmorphism-Design zeigt kontinuierlich aktualisierte Daten zu Breitengrad, Längengrad, Höhe und Geschwindigkeit.
 * **Flüssige Animationen:** Pulsierende Custom-Marker und weiches Kamera-Tracking (Auto-Panning) halten den Ballon immer im Fokus.
 
 ## 🛠️ Technologien
