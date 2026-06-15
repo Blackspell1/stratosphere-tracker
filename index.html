@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stratosphere Balloon Tracker</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- The Map Container -->
+    <div id="map"></div>
+
+    <!-- UI Overlay -->
+    <div class="ui-panel">
+        <div class="panel-header">
+            <div class="pulse-indicator"></div>
+            <h1>Mission Control</h1>
+        </div>
+        
+        <div class="data-grid">
+            <div class="data-card">
+                <span class="label">LATITUDE</span>
+                <span class="value" id="lat-val">--.----</span>
+            </div>
+            <div class="data-card">
+                <span class="label">LONGITUDE</span>
+                <span class="value" id="lng-val">--.----</span>
+            </div>
+            <div class="data-card">
+                <span class="label">ALTITUDE</span>
+                <span class="value" id="alt-val">0 m</span>
+            </div>
+            <div class="data-card">
+                <span class="label">SPEED</span>
+                <span class="value" id="speed-val">0 km/h</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="btn-simulate">Simulate Flight</button>
+            <button id="btn-reset" class="secondary">Reset</button>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="app.js"></script>
+</body>
+</html>
