@@ -118,16 +118,85 @@ body {
 }
 
 .data-card .value {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 800;
     color: var(--accent);
     font-variant-numeric: tabular-nums;
+    word-break: break-all;
+}
+
+/* Tabs */
+.controls-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--panel-border);
+    padding-bottom: 8px;
+    gap: 8px;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+}
+
+.tab-btn:hover {
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: none;
+}
+
+.tab-btn.active {
+    color: var(--accent);
+    background: rgba(56, 189, 248, 0.15);
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* SPOT Input Form */
+.spot-input-group {
+    display: flex;
+    gap: 8px;
+}
+
+.spot-input-group input {
+    flex: 1;
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 12px;
+    color: var(--text-main);
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.spot-input-group input:focus {
+    border-color: var(--accent);
+}
+
+.spot-status {
+    font-size: 0.8rem;
+    color: var(--text-muted);
 }
 
 .controls {
     display: flex;
     gap: 12px;
-    margin-top: 8px;
 }
 
 button {

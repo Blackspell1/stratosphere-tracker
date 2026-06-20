@@ -36,14 +36,29 @@
                 <span class="value" id="alt-val">0 m</span>
             </div>
             <div class="data-card">
-                <span class="label">SPEED</span>
-                <span class="value" id="speed-val">0 km/h</span>
+                <span class="label">LAST UPDATE</span>
+                <span class="value" id="time-val">--:--:--</span>
             </div>
         </div>
 
-        <div class="controls">
-            <button id="btn-simulate">Simulate Flight</button>
-            <button id="btn-reset" class="secondary">Reset</button>
+        <div class="controls-tabs">
+            <button id="tab-sim" class="tab-btn active">Simulation</button>
+            <button id="tab-live" class="tab-btn">Live SPOT</button>
+        </div>
+
+        <div id="panel-sim" class="tab-content">
+            <div class="controls">
+                <button id="btn-simulate">Simulate Flight</button>
+                <button id="btn-reset" class="secondary">Reset</button>
+            </div>
+        </div>
+
+        <div id="panel-live" class="tab-content hidden">
+            <div class="spot-input-group">
+                <input type="text" id="spot-feed-id" placeholder="Enter SPOT Feed ID (e.g. 0Xapx...)" />
+                <button id="btn-connect-spot">Connect</button>
+            </div>
+            <div class="spot-status" id="spot-status">Enter your Shared Page Feed ID to connect.</div>
         </div>
     </div>
 
